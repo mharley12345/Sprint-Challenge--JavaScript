@@ -7,28 +7,56 @@
 */
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
+const dinosaur1 =
+ {Name: 'tryannosaurus',
+ Diet: 'carnivorous',
+ Weight:'7000kg',
+ Lenght:'12m',
+ Period:'late cretaceous'}
+
+ 
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
+const dinosaur2=
+{Name: 'stegosaurus',
+ Diet: 'herbivorous',
+ Weight:'2000kg',
+ Lenght:'9m',
+ Period:'Late Jurassic'}
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+const dinosaur3=
+{Name: 'velociraptor',
+ Diet: 'carnivorous',
+ Weight:'15kg',
+ Lenght:'1.8m',
+ Period:'late cretaceous'}
+
+
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+
+console.log(dinosaur1.Weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dinosaur3.Diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dinosaur3.Lenght);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(dinosaur1.Period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+const roar=console.log('RAWERSRARARWERSARARARRRR!');
+  
+ 
+
+    
+ 
 
 
 // ==== Arrays ====
@@ -49,8 +77,29 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
+const universities = [
+{Name:"Missouri Southern State College"},
+{Name:"The School of the Art Institute of Chicago"},
+{Name: "Marian College"},
+{Name:"International Medical & Technological University"},
+{Name:"Sultan Salahuddin Abdul Aziz Shah Polytechnic"},
+{Name:"Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft"},
+{Name:"Salem University"},
+{Name:"Coastal Carolina University"},
+{Name:"Universidad Católica de Ávila"},
+{Name:"Universitat Rovira I Virgili Tarragona"},]
+
+
+universities.sort(function(a,b){
+  if (a.Name.toUpperCase() > b.Name.toUpperCase() ){
+      return 1
+
+  }  else return -1
+})
 console.log(universities)
+
+
+
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -58,7 +107,9 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+ const contactInfo graduates.first_name, graduates.email
+  
+
 console.log(contactInfo);
 
 
